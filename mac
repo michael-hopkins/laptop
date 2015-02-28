@@ -50,6 +50,7 @@ case "$SHELL" in
   *)
     fancy_echo "Changing your shell to zsh ..."
       chsh -s "$(which zsh)"
+      curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
     ;;
 esac
 
